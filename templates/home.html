@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css') }}">
+    </head>
+    <body>
+        <div class="login-container">
+            {% if user_login %}
+            <h1>U r Logged In </h1>
+            {% elif user_login == False %}
+            <h1>Problem</h1>
+            {% endif %}
+            
+            <h1>Login</h1>
+            <div class="login-form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" autocomplete="current-password">
+                </div>
+                <button onclick="login()" type="submit" class="submit-btn" id="loginBtn">Sign In</button><br><br>
+                <button onclick="get_dashboard()" type="submit" class="submit-btn" id="loginBtn">DashBoard</button>
+
+            </div>
+            <p class="signup-link">New user? <a href="#">Register here</a></p>
+        </div>
+        <script src="{{ url_for('static',filename='js/scripts.js') }}"></script>
+    </body>
+</html>

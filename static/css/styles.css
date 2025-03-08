@@ -1,0 +1,79 @@
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #f8f9fa;
+}
+
+.login-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    width: min(90%, 400px);
+    margin: 1rem;
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4dabf7;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background: #1971c2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.submit-btn:hover {
+    background: #1864ab;
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #495057;
+}
+
+.signup-link a {
+    color: #1971c2;
+    text-decoration: none;
+    font-weight: 500;
+}
